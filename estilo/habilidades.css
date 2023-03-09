@@ -39,9 +39,66 @@
 
 .contenedor-skills .skill .barra .barra-progreso1{
     background-color: #ffffff;
-    width: 95%;
+    width: 35%;
     height: 6px;
     animation: progreso1 2s forwards;
 }
 
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: #ffffff;
+    width: 02%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
 
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: #ffffff;
+    width: 0%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: #ffffff;
+    width: 0%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+
+/* Creando las animaciones de las barras */
+
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 02%;
+    }
+}
+
+@keyframes progreso3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes progreso4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 0%;
+    }
+}

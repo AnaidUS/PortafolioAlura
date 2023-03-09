@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/sobremi.css">
     <link rel="stylesheet" href="estilo/servicios.css">
     <link rel="stylesheet" href="estilo/habilidades.css">
+    <link rel="stylesheet" href="estilo/portafolio.css">
+    <link rel="stylesheet" href="estilo/contacto.css">
+    <link rel="stylesheet" href="estilo/footer.css">
     <title>Portafolio</title>
 </head>
 <body>
@@ -20,16 +23,16 @@
                     <h1>/ONE/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi" class="seleccionado">SOBRE MI</a></li>
-                            <li><a href="#servicios" class="seleccionado">SERVICIOS</a></li>
-                            <li><a href="#portafolio"class="seleccionado">PORTAFOLIO</a></li>
-                            <li><a href="#contacto" class="seleccionado">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" class="seleccionado" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" class="seleccionado" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio"class="seleccionado" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" class="seleccionado" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
 
                     <!--Iconos del menu responsive-->
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                     <!--Iconos de las redes sociales-->
@@ -104,19 +107,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis odio aliquid beatae tenetur aut id hic at autem libero animi, perferendis fugiat eius eos accusamus in eveniet.</p>
             </div>
 
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis odio aliquid beatae tenetur aut id hic at autem libero animi, perferendis fugiat eius eos accusamus in eveniet.</p>
-            </div>
-
-
         </div>
 
         <div class="fila">
@@ -132,18 +122,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis odio aliquid beatae tenetur aut id hic at autem libero animi, perferendis fugiat eius eos accusamus in eveniet.</p>
             </div>
             
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis odio aliquid beatae tenetur aut id hic at autem libero animi, perferendis fugiat eius eos accusamus in eveniet.</p>
-            </div>
-
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
                 <h4>Diseño de Sitios Web</h4>
@@ -199,7 +177,7 @@
                 <span class="porcentaje">0%</span>
             </div>
             <div class="barra">
-                <div id="PHP" class=""> </div>
+                <div id="php" class=""> </div>
             </div>
         </div>
 
@@ -214,6 +192,101 @@
         </div>
     </div>
 
+    <!--Sección Portafolio-->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/challenge__1.png" alt="Encriptador">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Encriptador usando HTML, CSS y Javascript</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/decodificador.png" alt="Decodificador">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Decodificador para traducir en código</p>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/ahorcado1.png" alt="Ahorcado">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Juego del ahorcado usando HTML, CSS y Javascript</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/ahorcado2.png" alt="Ahorcado">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Juego del ahorcado, usando HTML, CSS y Javascript</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/comercio.png" alt="pg_comercio">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Página de comercio online</p>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/pagina.png" alt="Página de consultoría en programación">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Página de consultoría, usando HTML, CSS y Javascript</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!--Sección Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctenos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--Sección footer-->
+    <footer>
+        <p>Todos los derechos reservados - 2023 &copy;</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="javaScript/script.js"></script>
 
 </body>
 </html>

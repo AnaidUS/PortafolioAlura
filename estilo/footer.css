@@ -1,0 +1,15 @@
+/* Sección footer */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
