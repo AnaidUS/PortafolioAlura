@@ -2,6 +2,7 @@
 
 #contacto{
     padding: 100px 15px;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 
 #contacto .titulo-seccion{
@@ -56,6 +57,6 @@
 }
 
 #contacto .btn-enviar:hover{
-    background-color: #ff5080;
+    background-color: #7c0331;
     color: #ffffff;
 }

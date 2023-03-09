@@ -1,0 +1,60 @@
+/* Sección formación */
+
+#formacion{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#formacion .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#formacion .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#formacion .fila .escuela{
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#formacion .fila .escuela:hover{
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#formacion .fila .escuela h4{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#formacion .fila .escuela hr{
+    width: 50%;
+    margin: auto;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+#formacion .fila .escuela ul{
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#formacion .fila .servicio p{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: end;
+}

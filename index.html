@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="estilo/sobremi.css">
+    <link rel="stylesheet" href="estilo/formacion.css">
+    <link rel="stylesheet" href="estilo/hobbies.css">
     <link rel="stylesheet" href="estilo/servicios.css">
     <link rel="stylesheet" href="estilo/habilidades.css">
     <link rel="stylesheet" href="estilo/portafolio.css">
@@ -25,6 +27,8 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" class="seleccionado" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#formacion" class="seleccionado" onclick="seleccionar(this)">FORMACIÓN</a></li>
+                            <li><a href="#hobbies" class="seleccionado" onclick="seleccionar(this)">HOBBIES</a></li>
                             <li><a href="#servicios" class="seleccionado" onclick="seleccionar(this)">SERVICIOS</a></li>
                             <li><a href="#portafolio"class="seleccionado" onclick="seleccionar(this)">PORTAFOLIO</a></li>
                             <li><a href="#contacto" class="seleccionado" onclick="seleccionar(this)">CONTACTO</a></li>
@@ -61,9 +65,87 @@
             <p class="titulo-seccion">Sobre Mí</p>
             <h2>Hola, soy <span>Anaid Urióstegui</span></h2>
             <h3>Desarrolladora Web</h3>
-            <p>Anaid Urióstegui se formó como Economista en la UNAM, en México, con una especialización en Economía de la empresa. Al emigrar a Perú, por motivos personales, se dio cuenta de que en el nuevo país su título ya no valía. Entonces es cuando se presenta la gran oportunidad de tomar una beca de ALURA ONE, para estudiar programación en FRONT-END.</p>
+            <p>Anaid Urióstegui, 34 años, Mexicana.  Se formó como Economista en la UNAM, en México, con una especialización en Economía de la empresa. Al emigrar a Perú, por motivos personales, se dio cuenta de que en el nuevo país su título ya no valía. Entonces es cuando se presenta la gran oportunidad de tomar una beca de ALURA ONE, para estudiar programación en FRONT-END.</p>
             <p>Anaid, decida a cambiar su vida, toma el reto de estudiar, desde cero, hasta convertirse en programadora junior en FRONT-END, venciendo obstáculos, luego de amanecidas e incontables horas de estudio, logra al fin obtener su certificado en ORACLE. Descubriendo su nueva pasión y medio de vida: la programación.</p>
-            <a href="#">Descargar CV</a>
+            <a href="img/cv2023.jpg" target="_blank">Ver  C V</a>
+        </div>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <section class="formacion" id="formacion">
+        <h2 class="titulo-seccion" >Formación académica</h2>
+            <div class="fila">
+                <div class="escuela">
+                    <ul class="contenedor__unam">
+                        <li class="academic__courses__item__img"><img src="img/UNAM.png"></li>
+                        <li class="academic__courses__item__title"><h4>Economía</h4></li>
+                        <hr>
+                        <li class="academic__courses__item__subtitle"><p>2006-2011</p></li>
+                        </ul>
+                </div>
+                <div class="escuela">
+                    <ul class="contenedor___oracle">
+                        <li class="item__img"><img src="img/alura_logo.png"></li>
+                        <li class="item__titulo"><h4>Programación FRONT-END</h4></li>
+                        <hr>
+                        <li class="item__subtitulo"><p>En curso</p></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <!-- Sección de Hobbies -->
+    <section class="hobbies" id="hobbies">
+        <h3 class="titulo-seccion">Mis Hobbies</h3>
+        <div class="fila">
+            <div class="contenedor__hobbies">
+                <ul>
+                    <li class="hobbies__img"><img src="img/escribir.png"></li>
+                    <hr>
+                    <li class="hobbies__name">Escribir novelas</li>
+                </ul>
+            </div>
+        
+            <div class="contenedor__hobbies">
+                <ul>
+                    <li class="hobbies__img"> <img src="img/leer.png" alt=""></li>
+                    <hr>
+                    <li class="hobbies__name">Leer Novelas</li>
+                </ul>
+            </div>
+        
+            <div class="contenedor__hobbies">
+                <ul>
+                    <li class="hobbies__img"> <img src="img/videojuego.png" alt=""></li>
+                    <hr>
+                    <li class="hobbies__name">Videojuegos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="contenedor__hobbies">
+                <ul>
+                    <li class="hobbies__img"><img src="img/pesas.png" alt=""></li>
+                    <hr>
+                    <li class="hobbies__name">Hacer ejercicio</li>
+                </ul>
+            </div>
+        
+            <div class="contenedor__hobbies">
+                <ul>
+                    <li class="hobbies__img"> <img src="img/postre.png" alt=""> </li>
+                    <hr>
+                    <li class="hobbies__name">Repostería</li>
+                </ul>
+            </div>
+        
+            <div class="contenedor__hobbies">
+                <ul>
+                    <li class="hobbies__img"> <img src="img/musica.png" alt=""> </li>
+                    <hr>
+                    <li class="hobbies__name">Escuchar música</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -261,14 +343,14 @@
         <div class="contenedor-form">
             <form action="">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Dirección email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" required>
+                    <input type="email" placeholder="Dirección email" class="input-mitad" required>
                 </div>
                 <div class="fila">
                     <input type="text" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
                 </div>
 
                 <input type="submit" value="Enviar" class="btn-enviar">
