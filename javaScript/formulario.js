@@ -19,6 +19,7 @@ form.addEventListener("submit", (e)=>{
     e.preventDefault()
 });
 
+//por qué no me deja usar name
 name.addEventListener("keyup", (e) =>{
     console.log(e.target)
 });
