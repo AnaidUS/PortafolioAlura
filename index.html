@@ -340,20 +340,23 @@
     <!--Sección Contacto-->
     <section id="contacto">
         <h3 class="titulo-seccion">Contáctenos ahora</h3>
-        <div class="contenedor-form">
+        <div class="contenedor-form" id="form">
             <form action="">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad" required>
+                    <input type="text" placeholder="Nombre Completo" id="name" class="input-mitad" max-length = "50" required>
+                    
                     <input type="email" placeholder="Dirección email" class="input-mitad" required>
+                   
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" placeholder="Tema..." class="input-full" id= "input-full" max-length = "50" required>
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" required></textarea>
+                    <textarea name="" id="asunto" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full" max-length = "300" required></textarea>
                 </div>
+                
 
-                <input type="submit" value="Enviar" class="btn-enviar">
+                <input type="submit" id="submit" value="Enviar" class="btn-enviar">
             </form>
         </div>
     </section>
@@ -369,6 +372,7 @@
     </footer>
 
     <script src="javaScript/script.js"></script>
+    <script src="javaScript/formulario.js"></script>
 
 </body>
 </html>
