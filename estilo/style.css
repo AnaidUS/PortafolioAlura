@@ -380,16 +380,16 @@ html{
 
     #sobremi{
         padding: 50px 0;
-        display: block;
+        display: block !important;
     }
 
     #sobremi .contenedor-foto{
-        max-width: 95px;
-        margin: 1.5px;
+        margin: 20px 5px 20px 70px;
+        text-align: center;
     }
 
     #sobremi .contenedor-foto img{
-        display: none;
+        display: block;
     }
 
     #sobremi .sobremi .titulo-seccion{
@@ -403,10 +403,23 @@ html{
 
     /*Formacion*/
 
+    #formacion{
+        padding: 100px 0;
+    }
+
     #formacion .fila{
         display: flex;
         flex-direction: column;
         margin-bottom: 5px;
+    }
+
+    #formacion .fila .escuela{
+        padding: 30px;
+        margin: 5px !important;
+    }
+
+    #formacion .fila img{
+        max-width: 280px;
     }
 
     /*hobbies*/
@@ -414,7 +427,8 @@ html{
     #hobbies .fila{
         display: flex;
         flex-direction: column;
-        margin-bottom: 5px;
+        margin: 5px 0;
+        padding: 5px 0;
     }
 
     #servicios{
@@ -444,6 +458,10 @@ html{
 
     #portafolio .fila .proyecto{
         margin: 10px auto;
+    }
+
+    #portafolio .fila .proyecto .info{
+        font-size: 8px;
     }
 
     #contacto{
