@@ -226,7 +226,7 @@ html{
         padding: 50px 15px;
     }
 
-    #contacto .contenedor-form .mitad{
+    /*#contacto .contenedor-form .mitad{
         margin-bottom: 15px;
         display: block;
     }
@@ -234,7 +234,7 @@ html{
     #contacto .contenedor-form .mitad input{
         width: 100%;
         margin-bottom: 15px;
-    }
+    }*/
 }
 
 
@@ -330,7 +330,7 @@ html{
         padding: 50px 15px;
     }
 
-    #contacto .contenedor-form .mitad{
+    /*#contacto .contenedor-form .mitad{
         margin-bottom: 15px;
         display: block;
     }
@@ -338,7 +338,7 @@ html{
     #contacto .contenedor-form .mitad input{
         width: 100%;
         margin-bottom: 15px;
-    }
+    }*/
 }
 
 
@@ -468,7 +468,11 @@ html{
         padding: 50px 15px;
     }
 
-    #contacto .contenedor-form .mitad{
+    .formulario__mensaje {
+        font-size: 12px;
+    }
+
+    /*#contacto .contenedor-form .mitad{
         margin-bottom: 15px;
         display: block;
     }
@@ -476,5 +480,21 @@ html{
     #contacto .contenedor-form .mitad input{
         width: 100%;
         margin-bottom: 15px;
-    }
+    }*/
+}
+
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
 }
