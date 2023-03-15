@@ -6,6 +6,8 @@ const nombre = document.getElementById("#nombre");
 const correo = document.getElementById("#correo");
 const asunto = document.getElementById("#asunto");
 const mensaje = document.querySelector("[name=mensaje]");
+const textarea = document.querySelectorAll("textarea");
+
 
 //Caracteres admitidos
 
@@ -56,19 +58,23 @@ const validarCampo = (expresion, input, campo) => {
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
 		campos[campo] = false;
 	}
-}
-
+};
 
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
 	input.addEventListener('blur', validarFormulario);
 });
 
+textarea.forEach((textarea) =>{
+	textarea.addEventListener("keyup", validarFormulario);
+	textarea.addEventListener("blur", validarFormulario);
+});
+
 
 formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	if(campos.nombre && campos.correo && campos.asunto){
+	if(campos.nombre && campos.correo && campos.asunto && campos.mensaje){
 		formulario.reset();
 
 		document.getElementById("formulario__mensaje-exito").classList.add("formulario__mensaje-exito-activo");
@@ -77,5 +83,4 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
-
 
